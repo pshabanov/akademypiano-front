@@ -6,7 +6,7 @@
   <section class="our-values">
     <h2>Наши ценности</h2>
     <div class="our-values__top">
-      <img src="/src/assets/images/content/our-values-1.webp" alt="">
+      <img src="/src/assets/images/content/our-values-1.jpg" alt="">
       <div class="">
         <h3><b>Ключевыми ценностями</b> <br> нашей школы являются:</h3>
         <div class="styled-list">
@@ -41,11 +41,15 @@
 
   &__top{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
     gap: 60px;
+
+    & img {
+      max-width: 400px;
+    }
   }
 
   &__bottom{
