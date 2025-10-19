@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: 16px;
 
+  --main-bg-color: #f6f1ea;
   --color-border: #e8e8e8;
   --color-focus: #8e44ad;
   --color-btn: #2c3e50;
@@ -26,5 +27,31 @@ body {
 
 .wrapper {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", serif;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.text {
+  font-size: 18px;
+  margin-bottom: 20px;
 }

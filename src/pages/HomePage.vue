@@ -1,10 +1,13 @@
 <script lang="ts" setup="">
-import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import { ref } from "vue";
 import type { Content } from "@/entity/content.model.ts";
 import ky from "ky";
 import ContentBox from "@/components/ContentBox.vue";
+import MainBanner from "@/components/MainBanner.vue";
+import AboutSchool from "@/components/AboutSchool.vue";
+import Mission from "@/components/Mission.vue";
+import OurValues from "@/components/OurValues.vue";
 
 const content = ref<Content>(
     {
@@ -35,9 +38,11 @@ const changeContentBox = (content) => {
 </script>
 
 <template>
-  <Header/>
+  <MainBanner />
   <main class="wrapper">
-    main content
+    <AboutSchool />
+    <Mission />
+    <OurValues />
     <ContentBox
         v-if="!!content['new-slug']"
         :value="content['new-slug'].value"
@@ -49,5 +54,4 @@ const changeContentBox = (content) => {
 </template>
 
 <style scoped lang="scss">
-
 </style>
