@@ -21,6 +21,7 @@
 <style scoped lang="scss">
 .help-us {
   margin-top: 60px;
+  margin-bottom: 80px;
   h2 {
     text-align: center;
     font-size: 45px;

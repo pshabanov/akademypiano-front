@@ -10,6 +10,7 @@ import Mission from "@/components/blocks/Mission.vue";
 import OurValues from "@/components/blocks/OurValues.vue";
 import AboutCreator from "@/components/blocks/AboutCreator.vue";
 import HelpUs from "@/components/blocks/HelpUs.vue";
+import RequestForUs from "@/components/blocks/RequestForUs.vue";
 
 const content = ref<Content>(
     {
@@ -46,21 +47,23 @@ const changeContentBox = (content) => {
       <AboutSchool />
       <Mission />
       <OurValues />
-
     </div>
   </div>
-  <div class="">
-    <div class="wrapper white">
-      <AboutCreator />
-      <HelpUs />
-      <ContentBox
-        v-if="!!content['new-slug']"
-        :value="content['new-slug'].value"
-        @click="changeContentBox(content['new-slug'])"
-      />
-      <pre>{{ content }}</pre>
+  <div class="wrapper">
+    <AboutCreator />
+    <HelpUs />
+  </div>
+  <div class="main">
+    <div class="wrapper">
+      <RequestForUs />
     </div>
   </div>
+  <ContentBox
+    v-if="!!content['new-slug']"
+    :value="content['new-slug'].value"
+    @click="changeContentBox(content['new-slug'])"
+  />
+  <pre>{{ content }}</pre>
 
   <Footer/>
 </template>
