@@ -4,10 +4,11 @@ import { ref } from "vue";
 import type { Content } from "@/entity/content.model.ts";
 import ky from "ky";
 import ContentBox from "@/components/ContentBox.vue";
-import MainBanner from "@/components/MainBanner.vue";
-import AboutSchool from "@/components/AboutSchool.vue";
-import Mission from "@/components/Mission.vue";
-import OurValues from "@/components/OurValues.vue";
+import MainBanner from "@/components/blocks/MainBanner.vue";
+import AboutSchool from "@/components/blocks/AboutSchool.vue";
+import Mission from "@/components/blocks/Mission.vue";
+import OurValues from "@/components/blocks/OurValues.vue";
+import AboutCreator from "@/components/blocks/AboutCreator.vue";
 
 const content = ref<Content>(
     {
@@ -43,6 +44,7 @@ const changeContentBox = (content) => {
     <AboutSchool />
     <Mission />
     <OurValues />
+    <AboutCreator />
     <ContentBox
         v-if="!!content['new-slug']"
         :value="content['new-slug'].value"
