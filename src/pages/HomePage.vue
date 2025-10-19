@@ -11,6 +11,7 @@ import OurValues from "@/components/blocks/OurValues.vue";
 import AboutCreator from "@/components/blocks/AboutCreator.vue";
 import HelpUs from "@/components/blocks/HelpUs.vue";
 import RequestForUs from "@/components/blocks/RequestForUs.vue";
+import Course from "@/components/blocks/Course.vue";
 
 const content = ref<Content>(
     {
@@ -53,11 +54,8 @@ const changeContentBox = (content) => {
     <AboutCreator />
     <HelpUs />
   </div>
-  <div class="main">
-    <div class="wrapper">
-      <RequestForUs />
-    </div>
-  </div>
+  <RequestForUs />
+  <Course />
   <ContentBox
     v-if="!!content['new-slug']"
     :value="content['new-slug'].value"
