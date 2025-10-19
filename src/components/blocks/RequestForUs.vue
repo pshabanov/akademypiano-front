@@ -25,6 +25,11 @@ h2 {
   margin-top: 80px;
   font-size: 45px;
   font-weight: 500;
+
+  @media (max-width: 756px) {
+    font-size: 30px;
+    margin-top: 40px;
+  }
 }
 .styled-list {
   display: flex;
@@ -37,6 +42,12 @@ h2 {
   color: #1a1a1a;
   width: fit-content;
   flex-wrap: wrap;
+
+  @media (max-width: 756px) {
+    font-size: 22px;
+  }
+
+
 }
 
 .styled-list div {
@@ -45,6 +56,10 @@ h2 {
   align-items: baseline;
   gap: 10px;
   margin-bottom: 6px;
+
+  @media (max-width: 756px) {
+    flex: 1 100%;
+  }
 }
 
 .styled-list span {

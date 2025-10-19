@@ -33,6 +33,11 @@ h2 {
   text-align: center;
   font-size: 45px;
   font-weight: 500;
+
+  @media (max-width: 756px) {
+    font-size: 30px;
+    margin-top: 40px;
+  }
 }
 
 h3 {
@@ -41,12 +46,20 @@ h3 {
   font-weight: 400;
   font-style: italic;
   margin-bottom: -30px;
+
+  @media (max-width: 756px) {
+    margin-bottom: 0;
+  }
 }
 
 .text {
   text-align: center;
   max-width: 60%;
   margin: 0 auto;
+
+  @media (max-width: 756px) {
+    max-width: 100%;
+  }
 }
 
 .course-overview {
@@ -56,10 +69,18 @@ h3 {
   align-items: center;
   margin-top: 60px;
 
+  @media (max-width: 756px) {
+    display: block;
+  }
+
   &__left {
     & img {
       width: 100%;
     }
+  }
+
+  @media (max-width: 756px) {
+    margin-bottom: 40px;
   }
 }
 </style>

@@ -18,19 +18,39 @@
       </p>
     </div>
     <div class="about-img">
-      <img src="/src/assets/images/content/about-img.webp" alt="">
+      <img src="/src/assets/images/content/about-img.jpg" alt="">
     </div>
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .about {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 120px;
   padding: 100px 0 60px 0;
+
+  @media (max-width: 756px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 0 30px 0;
+  }
+
+   &-img {
+     border-radius: 12px;
+     overflow: hidden;
+     img {
+       display: block;
+       max-height: 500px;
+     }
+   }
 }
 
 h2 {
   font-size: 45px;
+  @media (max-width: 756px) {
+    font-size: 30px;
+  }
 }
 </style>

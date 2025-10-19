@@ -8,6 +8,7 @@
       <div class="content">
         <div class="content__left">
           <h2>Индивидуальные занятия</h2>
+          <div class="_mob"><img src="/src/assets/images/content/individual.jpg" alt=""></div>
           <p class="text">
             <strong>Если у вас уже есть начальная база и знание нотной грамоты, то будем рады видеть вас на
               индивидуальных
@@ -50,6 +51,17 @@
   align-items: center;
   gap: 60px;
 
+  @media (max-width: 756px) {
+    display: block;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    ._mob img{
+      width: 100%;
+    }
+  }
+
   &.reverse {
     grid-template-columns: auto 1fr;
   }
@@ -63,6 +75,9 @@
       display: block;
       max-width: 100%;
       max-height: 600px;
+      @media (max-width: 756px) {
+        display: none;
+      }
     }
   }
 }
@@ -72,5 +87,9 @@ h2 {
   font-size: 45px;
   font-weight: 300;
   line-height: 1.2;
+
+  @media (max-width: 756px) {
+    font-size: 30px;
+  }
 }
 </style>

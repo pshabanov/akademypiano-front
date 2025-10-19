@@ -11,6 +11,9 @@
       <div class="creator__list">
         <h2>ОБ ОСНОВАТЕЛЕ</h2>
         <h3>Венера Алканова</h3>
+        <div class="_mob">
+          <img alt="creator" src="/src/assets/images/content/creator.jpg">
+        </div>
         <ul class="creator__list">
           <li>Профессиональная пианистка и преподаватель фортепиано</li>
           <li>Выпускница Санкт-Петербургской консерватории с красным дипломом</li>
@@ -45,11 +48,20 @@
     display: flex;
     gap: 60px;
     margin-bottom: 60px;
+
+    @media (max-width: 756px) {
+      display: block;
+    }
   }
 
   &__img {
+
     border-radius: 20px;
     overflow: hidden;
+
+    @media (max-width: 756px) {
+      display: none;
+    }
 
     & img {
       max-width: 20vw;
@@ -61,11 +73,21 @@
     list-style: circle;
     margin-left: 20px;
     font-size: 18px;
+    @media (max-width: 756px) {
+      margin-left: 0;
+      li {
+        margin-left: 20px;
+      }
+    }
   }
 
   h2 {
     font-size: 45px;
     font-weight: 600;
+
+    @media (max-width: 756px) {
+      font-size: 30px;
+    }
   }
 
   h3 {
@@ -77,9 +99,26 @@
     font-size: 28px;
     font-weight: 300;
     font-style: italic;
+    @media (max-width: 756px) {
+      width: auto;
+      font-size: 24px;
+    }
   }
   .text {
     width: 75%;
+    @media (max-width: 756px) {
+      width: auto;
+    }
+  }
+}
+
+._mob {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  img {
+    display: block;
+    width: 100%;
   }
 }
 </style>

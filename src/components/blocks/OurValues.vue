@@ -34,9 +34,16 @@
 .our-values {
   padding: 140px 0 60px 0;
 
+  @media (max-width: 756px) {
+    padding: 40px 0;
+  }
+
   h2{
     text-align: center;
     font-size: 45px;
+    @media (max-width: 756px) {
+      font-size: 30px;
+    }
   }
 
   &__top{
@@ -46,6 +53,13 @@
     align-items: center;
     margin-bottom: 60px;
     gap: 60px;
+
+    @media (max-width: 756px) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
 
     & img {
       max-width: 400px;
@@ -58,6 +72,13 @@
     justify-content: center;
     align-items: center;
     gap: 60px;
+
+    @media (max-width: 756px) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 25px;
+    }
+
   }
 
   h3 {
@@ -73,6 +94,10 @@
   line-height: 1.2;
   color: #1a1a1a;
   width: fit-content;
+
+  @media (max-width: 756px) {
+    font-size: 22px;
+  }
 }
 
 .styled-list div {

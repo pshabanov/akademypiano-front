@@ -21,15 +21,27 @@
   border-color: #e6e6e6;
   border-style: solid;
   box-shadow: 1px 1px 30px 0 rgba(175, 175, 175, 0.3);
+
+  @media (max-width: 756px) {
+    padding: 30px 0;
+  }
 }
 
 h3 {
   font-size: 36px;
   text-align: center;
+  @media (max-width: 756px) {
+    margin-bottom: 20px;
+  }
 }
 
 .text {
   text-align: center;
   max-width: 60%;
+  
+  @media (max-width: 756px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 </style>

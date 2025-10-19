@@ -26,6 +26,11 @@
     text-align: center;
     font-size: 45px;
     font-weight: 600;
+
+    @media (max-width: 756px) {
+      font-size: 30px;
+    }
+
   }
 
   &__list {
@@ -43,6 +48,10 @@
       padding: 20px 24px;
       border-radius: 10px;
       box-shadow: 0 0 0 1px #f1ede8 inset;
+
+      @media (max-width: 756px) {
+        flex: 1 100%;
+      }
     }
   }
 }
