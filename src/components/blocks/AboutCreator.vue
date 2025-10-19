@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="wrapper creator">
+  <div class="creator">
     <div class="creator__wrapper">
       <div class="creator__img">
         <img alt="creator" src="/src/assets/images/content/creator.jpg">
